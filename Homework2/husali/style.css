@@ -1,0 +1,76 @@
+/* Ensure the SVG takes up the full viewport */
+svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Style for axis lines and text */
+.axis path,
+.axis line {
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* Style for titles */
+.title {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Style for axis labels */
+.axis-label {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Style for legend text */
+.legend-text {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 800px) {
+    .title {
+        font-size: 14px;
+    }
+    .axis-label {
+        font-size: 12px;
+    }
+    .axis text {
+        font-size: 10px;
+    }
+    .legend-text {
+        font-size: 10px;
+    }
+}
+
+/* Premium-styled tooltip for bar chart */
+.bar-tooltip {
+    position: absolute;
+    pointer-events: none;
+    background: linear-gradient(135deg, #f8fafc 60%, #e0e7ef 100%);
+    color: #222;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(30, 41, 59, 0.18), 0 1.5px 6px rgba(30, 41, 59, 0.10);
+    padding: 14px 22px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1.5px solid #d1d5db;
+    opacity: 0;
+    transition: opacity 0.18s cubic-bezier(.4,0,.2,1);
+    z-index: 1000;
+    letter-spacing: 0.01em;
+}
+
+.bar-tooltip.visible {
+    opacity: 1;
+}
