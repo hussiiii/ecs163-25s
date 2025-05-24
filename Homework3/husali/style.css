@@ -1,4 +1,4 @@
-/* ───── layout ───── */
+
 body{margin:0;font-family:system-ui,Arial,sans-serif;background:#f6f9fc;color:#222}
 .grid{
   display:grid;
@@ -19,25 +19,20 @@ body{margin:0;font-family:system-ui,Arial,sans-serif;background:#f6f9fc;color:#2
 .chart h2{margin:.2em 0;font-size:1.15em}
 .chart p {margin:0 0 .6em;font-size:.9em;color:#555}
 
-/* Fixed SVG sizes */
 .chart svg{width:100%;display:block}
 #ov-chart svg,#fc-chart svg{height:340px}
 #ad-chart svg{height:640px}
 
-/* ───── text & axes ───── */
 .axis path,.axis line{stroke:#333;shape-rendering:crispEdges}
 .axis text{font-size:11px}
 
-/* ───── visuals ───── */
 .point        {opacity:.75; cursor: pointer;}
 .point.dimmed {opacity:.08}
 .line         {opacity:.25;fill:none;stroke-width:1}
 .line.dimmed  {opacity:.04}
 
-/* ───── brush rectangle ───── */
 .brush .selection{fill:#4f46e5;fill-opacity:.20;stroke:#4338ca}
 
-/* ───── tooltip ───── */
 .tooltip{
   position:absolute;pointer-events:none;
   background:rgba(0,0,0,.72);color:#fff;
@@ -45,13 +40,11 @@ body{margin:0;font-family:system-ui,Arial,sans-serif;background:#f6f9fc;color:#2
   display:none;z-index:10
 }
 
-/* ───── legend styling ───── */
 .legend text {
   font-size: 12px;
   fill: #333;
 }
 
-/* ───── responsive design ───── */
 @media(max-width:800px){
   .grid{grid-template-columns:1fr}
   #ad-chart svg{height:520px}

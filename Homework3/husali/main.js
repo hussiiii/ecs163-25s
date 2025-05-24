@@ -1,5 +1,5 @@
 /*  HW-3 Interactive Pokémon Dashboard
-    Hussain Ali ECS163
+    Hussain Ali ECS163. Homework 3
 */
 const CSV_FILE = "data/pokemon_alopez247.csv";
 
