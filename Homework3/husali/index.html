@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" style="width:100%;height:100%">
+<head>
+  <meta charset="utf-8">
+  <title>HW 3 – Interactive Pokémon Dashboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+<div class="grid">
+  <div class="chart" id="ov-chart">
+    <h2>Overview • Pokémon Count by Type</h2>
+    <p>Click a bar to filter that primary type.</p>
+    <svg></svg>
+  </div>
+
+  <div class="chart" id="fc-chart">
+    <h2>Focus • Total Stats vs Catch Rate</h2>
+    <p>Brush a rectangle to zoom-in; wheel/drag to pan &amp; zoom.</p>
+    <svg></svg>
+  </div>
+
+  <div class="chart" id="ad-chart">
+    <h2>Advanced • Parallel Coordinates of Six Base Stats</h2>
+    <p>Both bar-click &amp; scatter-brush update this view (fade transition).</p>
+    <svg></svg>
+  </div>
+</div>
+
+<div id="tooltip" class="tooltip"></div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
